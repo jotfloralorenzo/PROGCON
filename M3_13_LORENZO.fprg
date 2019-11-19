@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-19 10:45:08 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAxOS0xMS0xOTswOTo0Mjo0NyBBTTsyNjkw"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAxOS0xMS0xOTsxMDo0NTowOCBBTTsyOzI3OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Please type a number and we'll identify if it is ODD or EVEN&quot;" newline="True"/>
+            <declare name="NumberA" type="Integer" array="False" size=""/>
+            <declare name="WhatIs" type="Integer" array="False" size=""/>
+            <input variable="NumberA"/>
+            <assign variable="WhatIs" expression="NumberA % 2"/>
+            <if expression="WhatIs==0">
+                <then>
+                    <output expression="&quot;It is EVEN&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;It is ODD&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Thank you for using this app! If you wish to try again just restart&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
