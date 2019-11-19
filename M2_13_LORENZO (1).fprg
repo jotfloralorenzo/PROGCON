@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 11:14:47 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLTlNQVVMMkE7MjAxOS0xMC0yOTsxMDo1MDo1OCBBTTsyNzMz"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLTlNQVVMMkE7MjAxOS0xMC0yOTsxMToxNDo0NyBBTTsxOzI4NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Radius" type="Integer" array="False" size=""/>
+            <declare name="Diameter" type="Integer" array="False" size=""/>
+            <declare name="Area" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to the program that identifies the area of a circle by using the diameter or radius&quot;" newline="True"/>
+            <output expression="&quot;Input Radius or Diameter&quot;" newline="True"/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Radius&quot;">
+                <then>
+                    <output expression="&quot;Input Radius&quot;" newline="True"/>
+                    <input variable="Radius"/>
+                    <assign variable="Area" expression="(3.14)*Radius ^2"/>
+                    <output expression="&quot;Area of the circle is &quot; &amp; Area" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Answer = &quot;Diameter&quot;">
+                        <then>
+                            <output expression="&quot;Input Diameter&quot;" newline="True"/>
+                            <input variable="Diameter"/>
+                            <assign variable="Area" expression="(3.14/4)*Diameter^2"/>
+                            <output expression="&quot;Area of the circle is &quot; &amp; Area" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
